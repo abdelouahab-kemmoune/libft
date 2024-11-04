@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:52:06 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:06:32 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:06:44 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_bzero(void *s, size_t n)
 	char	*ptr;
 
 	i = 0;
-	*ptr = (char *) s;
+	ptr = (char *)s;
 	while (i < n)
 	{
 		ptr[i] = 0;

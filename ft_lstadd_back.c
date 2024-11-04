@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:43:38 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:47:30 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:35:39 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,15 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*tmp;
+	t_list *last_node;
 
-	tmp = *lst;
-	tmp = ft_lstlast(tmp);
-	tmp->next = new;
-	if (*lst != 0)
+	if (!lst || !new)
+		return ;
+	if (!(*lst))
 		*lst = new;
+	else
+	{
+		last_node = ft_lstlast(*lst);
+		last_node->next = new;
+	}
 }
