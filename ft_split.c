@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:57:02 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/06 16:56:11 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:06:17 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char    *ft_free(char **array)
         free(array[i]);
         i++;
     }
-    free(array);
+    return(NULL);
 }
 
 char *ft_strncpy(char *dest, char const *src, int n)
