@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:52:06 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/04 17:06:44 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:57:30 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/*int main()
-{
-    char str[] = "abdo";
-    int n = 1;
-    ft_bzero(str, n);
-    printf("%s", str);
-}*/

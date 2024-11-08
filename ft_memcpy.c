@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:28:05 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/08 10:05:17 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:56:56 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	tmp_dest[n] = '\0';
 	return (dest);
 }
-
-/*int main()
-{
-    char dest[] = "kemm";;
-    char src[] = "ABDO";
-    int n = 7;
-    
-    printf("%s", ft_memcpy(dest, src, n));
-}*/

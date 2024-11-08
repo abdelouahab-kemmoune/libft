@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:15:01 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:09:13 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:56:28 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,3 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &n, 1);
 	}
 }
-
-/*int main()
-{
-    int n = 3;
-    int fd = 1;
-    
-    ft_putnbr_fd(n, fd);
-}*/

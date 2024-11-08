@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:39:36 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:45:46 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:57:04 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 	}
 	return (NULL);
 }
-
-/*int main()
-{
-    char str[] = "abdo";
-    int search = 'b';
-    int num = 1;
-    
-    printf("%s", ft_memchr(str, search, num));
-}*/

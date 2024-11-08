@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:05:51 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:18:35 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:56:12 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
-
-/*int main()
-{
-    char s1[] = "ak";
-    char s2[] = "emmoun";
-
-    printf("%s", ft_strjoin(s1, s2));
-}*/

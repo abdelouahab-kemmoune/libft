@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:05:28 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:09:45 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:56:23 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-/*int main()
-{
-    char s[] = "abdo";
-    int fd = 1;
-    
-    ft_putstr_fd(s, fd);
-}*/

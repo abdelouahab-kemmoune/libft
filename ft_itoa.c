@@ -1,78 +1,63 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/30 09:55:01 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/08 09:58:19 by akemmoun         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
-
-int	count_len(int n)
+int    count_len(long n)
 {
-	int	counter;
-
-	counter = 0;
-	while (n > 0)
-	{
-		n = n / 10;
-		counter++;
-	}
-	return (counter);
+    int    counter;
+    counter = 0;
+    while (n > 0)
+    {
+        n = n / 10;
+        counter++;
+    }
+    return (counter);
 }
 
-char	*ft_ispositive(int n)
+char    *ft_ispositive(long n)
 {
-	int		len;
-	char	*array;
+    int        len;
+    char    *array;
 
-	len = count_len(n);
-	array = (char *) malloc (len + 1);
-	array[len--] = '\0';
-	while (len >= 0)
-	{
-		array[len] = (n % 10) + '0';
-		n = n / 10;
-		len--;
-	}
-	return (array);
+    len = count_len(n);
+	if(n == 0)
+	len++;
+    array = (char *) malloc (len + 1);
+    array[len--] = '\0';
+    while (len >= 0)
+    {
+        array[len] = (n % 10) + '0';
+        n = n / 10;
+        len--;
+    }
+    return (array);
 }
 
-char	*ft_isnegative(int n)
+char    *ft_isnegative(long n)
 {
-	int		len;
-	char	*array;
+    int        len;
+    char    *array;
 
-	n *= -1;
-	len = count_len(n);
-	array = (char *) malloc (sizeof(char) *(len + 2));
-	array[len + 1] = '\0';
-	while (len > 0)
-	{
-		array[len] = (n % 10) + '0';
-		n = n / 10;
-		len--;
-	}
-	array[len] = '-';
-	return (array);
+    n *= -1;
+    len = count_len(n);
+    array = (char *) malloc (sizeof(char) *(len + 2));
+    array[len + 1] = '\0';
+    while (len > 0)
+    {
+        array[len] = (n % 10) + '0';
+        n = n / 10;
+        len--;
+    }
+    array[len] = '-';
+    return (array);
 }
 
-char	*ft_itoa(int n)
+char    *ft_itoa(int n)
 {
-	char	*array;
-	int		len;
+    char    *array;
+    long nb;
 
-	if (n == -2147483648)
-		return ("-2147483648");
-	if (n == 0)
-		return ("0");
-	if (n < 0)
-		array = ft_isnegative(n);
-	if (n > 0)
-		array = ft_ispositive(n);
-	return (array);
+	nb = n;
+    if (nb < 0)
+        array = ft_isnegative(nb);
+    if (nb >= 0)
+        array = ft_ispositive(nb);
+    return (array);
 }

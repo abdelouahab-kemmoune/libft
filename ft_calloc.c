@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:41:43 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:04:39 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:57:26 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (tmp);
 }
-
-/*int main()
-{
-    size_t count = 7;
-    size_t size = 2;
-    unsigned char *ptr = (unsigned char*) ft_calloc(count, size);
-
-    printf("%s", ptr);
-    
-    free(ptr);
-}*/

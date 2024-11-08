@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:01:11 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:12:47 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:28:58 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s1)
 	size_t	i;
 
 	i = 0;
-	dest = (char *) malloc ((ft_strlen(s1)) + 1);
+	dest = (char *) malloc (ft_strlen(s1) + 1);
 	if (!dest)
 		return (NULL);
 	while (s1[i])
@@ -29,11 +29,3 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-
-/*int main()
-{
-    const char str1[] = "abdo";
-    printf("%s", ft_strdup(str1));
-    char *str = ft_strdup(str1);
-    free(str);
-}*/

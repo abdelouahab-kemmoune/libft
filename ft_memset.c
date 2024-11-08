@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:04:30 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/08 10:08:48 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:44:02 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,3 @@ void	*ft_memset(void *str, int c, size_t len)
 	}
 	return (str);
 }
-
-/*int main()
-{
-    char ptr[] = "abdoelo";
-    int c = 'a';
-    printf("%s", ft_memset(ptr, c, 3));
-}*/

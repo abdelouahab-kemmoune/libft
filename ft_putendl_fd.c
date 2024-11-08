@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:08:53 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:07:54 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:56:34 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-/*int main()
-{
-    char s[] = "abdo";
-    int fd = 1;
-
-    ft_putendl_fd(s, fd);
-}*/

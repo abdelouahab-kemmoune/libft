@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:17:26 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/08 10:07:03 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:56:50 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,3 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
-
-/*int main()
-{
-    char buffer[] = "steel ball run";
-    char *dest = &buffer[1];
-    //char *src = "klmnopqrstuv";
-    size_t len = 7;
-    
-    printf("%s\n", memmove(dest, dest+1 , len));
-}*/

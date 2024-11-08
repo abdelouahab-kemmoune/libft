@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:32:54 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:37:03 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:53:51 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,3 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	str[len] = '\0';
 	return (str);
 }
-
-/*int main()
-{
-    char str[] = "abdonadi";
-    int start = 2;
-    int len = 3;
-    
-    printf("%s", ft_substr(str, start, len));
-}*/

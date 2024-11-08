@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:02:51 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/03 16:28:23 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:54:06 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-/*int main()
-{
-    char haystack[] = "akemmoun";
-    char needle[] = "k";
-    int n = 2;
-
-    printf("%s", ft_strnstr(haystack, needle, n));
-}*/
