@@ -6,7 +6,7 @@
 /*   By: akemmoun <akemmoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 14:22:01 by akemmoun          #+#    #+#             */
-/*   Updated: 2024/11/08 15:51:03 by akemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:59:01 by akemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void	*ft_memset(void *str, int c, size_t len);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+char	**ft_split(char const *s, char c);
 
 typedef struct s_list
 {

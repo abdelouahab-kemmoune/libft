@@ -1,12 +1,10 @@
 NAME = libft.a
 
-CC = cc
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
-
-
 
 SRC = ft_atoi.c ft_isdigit.c ft_strlcat.c ft_strnstr.c ft_itoa.c ft_putendl_fd.c\
 ft_isalnum.c ft_isprint.c ft_strlcpy.c  ft_strrchr.c ft_split.c ft_strmapi.c ft_putnbr_fd.c\
@@ -28,11 +26,11 @@ all: $(NAME)
 bonus: $(OBONUS)
  
 $(NAME): $(OBJ)
-		ar rc $(NAME) $(OBJ)
+		ar rcs $(NAME) $(OBJ)
 
 $(OBONUS): $(BONUS)
 		$(CC) $(CFLAGS) -c $(BONUS)
-				ar rc $(NAME) $(OBONUS)
+				ar rcs $(NAME) $(OBONUS)
 
 
 clean:
